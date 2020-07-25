@@ -1,0 +1,19 @@
+﻿<Window x:Class="MojaWPFApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MojaWPFApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel>
+        <UniformGrid Columns="3" DockPanel.Dock="Bottom">
+            <Button FontSize="24" Margin="22,0,60,0" Click="Dodaj">Dodaj</Button>
+            <Button FontSize="24" Height="44" Margin="32,0,56,0" Content="Izbrisi" Click="Brisi"/>
+            <Button FontSize="24" Margin="33,0,47,0" Click="Izmena">Izmeni </Button>
+        </UniformGrid>
+     
+        <DockPanel DockPanel.Dock="Bottom"></DockPanel>
+        <DataGrid Name="datagrid" FontSize="24" IsReadOnly="True" ColumnWidth="*"/>
+    </DockPanel>
+</Window>
